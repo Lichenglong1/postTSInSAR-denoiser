@@ -1,4 +1,4 @@
-# A deep-learning-based denoiser to detect clean time series deformation following an earthquake directly from input noisy TSInSAR, which is applicable if a time series InSAR including more than 16 SAR acquisitions is available.
+# A deep-learning-based denoiser to automatically recover clean time series deformation following an earthquake directly from input noisy TSInSAR, which is applicable if a time series InSAR including more than 16 SAR acquisitions is available.
 
 # Installation
 ## Basic
