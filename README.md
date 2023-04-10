@@ -18,5 +18,5 @@ pip install -r requirements.txt
 
 # Prediction
 ```shell
-python CNN-InSAR_predict.py
+python postTSInSAR-denoiser.py
 ```
