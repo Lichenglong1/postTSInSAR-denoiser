@@ -1,22 +1,13 @@
-# A deep-learning-based denoiser to automatically recover clean time series deformation following an earthquake directly from input noisy TSInSAR, which is applicable if a time series InSAR including more than 16 SAR acquisitions is available.
+Seamless SAR Archive (SSARA) project 
+------
 
-# Installation
-## Basic
-- `Python` >= 3.8
-## Modules
+This repository contains software developed as part of the SSARA project, most notably will be a command line client used to perform federated queries with the API and utilities for data formatting and conversion.  Check out the Wiki for more information about specific elements of the project and you can create issues to let us now about any bugs or if you have a feature request.
 
-- `h5py`
-- `numpy`
-- `matplotlib` <= 3.5.1
-- `rasterio`
-- `tensorflow-gpu` >= 2.5.0
+For more information on the project, details about the API, and tutorial information [see the WIKI](https://www.unavco.org/gitlab/unavco_public/ssara_client/-/wikis/Home)
 
-```shell
-pip install -r requirements.txt
-```
+The API root for the SSARA federated query is:
+http://web-services.unavco.org/brokered/ssara/
 
+The SSARA Data Search and Access GUI is available at: https://web-services.unavco.org/brokered/ssara/gui
 
-# Prediction
-```shell
-python postTSInSAR-denoiser.py
-```
+NOTE: see this NASA EarthData Wiki entry on [How To Access Data With cURL And Wget](https://wiki.earthdata.nasa.gov/display/EL/How+To+Access+Data+With+cURL+And+Wget) if you encounter issues downloading data from ASF via SSARA.
