@@ -25,5 +25,5 @@ pip install -r requirements.txt
 
 # Prediction
 ```shell
-python postTSInSAR-denoiser.py
+python Predicting_TSInSAR.py
 ```
