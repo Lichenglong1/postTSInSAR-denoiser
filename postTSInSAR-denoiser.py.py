@@ -1,4 +1,4 @@
-mport h5py
+import h5py
 import argparse
 import numpy as np
 import rasterio as rio
