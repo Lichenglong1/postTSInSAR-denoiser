@@ -224,7 +224,7 @@ for i in range(1):
         rmse = tf.sqrt(tf.keras.losses.MeanSquaredError(reduction=tf.keras.losses.Reduction.NONE)(y_true, y_pred))
         nrmse = tf.reduce_mean((rmse - tf.reduce_mean(rmse)) / tf.math.reduce_std(y_pred))
         print(1 - ssim, nrmse)
-        return 0.5*（1 - ssim） + 0.5*nrmse
+        return 0.5*(1-ssim) + 0.5*nrmse
     loss = Loss
     
     autoencoder.compile(optimizer="adam", loss=loss)
@@ -318,10 +318,6 @@ for i in range(1):
         """Take the SSIM for each prediction - target pair in the test set, and return the average
         across the entire test set"""
         return float(tf.image.ssim(pred_img, target_img, 2, filter_size=8))
-
-    # the paper appears to be using MSSIM not SSIM, but they are not taking the average anywhere
-    # that's something I'm doing to get a nice single metric to use to evaluate the different
-    # model runs I'm doing. 
 
     def avg_mssim(pred_img, target_img):
         """For each prediction-target pair in the set, take 8x8 windows, calculate SSIM, average
